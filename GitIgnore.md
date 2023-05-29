@@ -1,32 +1,59 @@
-Create a .gitignore file:
+## Create a .gitignore file:
 
 ```bash
 #create .gitignore file
 touch .gitignore
+
 #create and write in .gitignore file
 cat .gitignore
 ```
 
-# ignore all .a files
+<br/>
 
+## Content of .gitignore file:
+
+- ### Ignore all .a files
+
+```bash
 \*.a
+```
 
-# but do track lib.a, even though you're ignoring .a files above
+<br/>
 
+- ### But do track lib.a, even though you're ignoring .a files above
+
+```bash
 !lib.a
+```
 
-# only ignore the TODO file in the current directory, not subdir/TODO
+<br/>
 
+- ### Only ignore the TODO file in the current directory, not subdir/TODO
+
+```bash
 /TODO
+```
 
-# ignore all files in any directory named build
+<br/>
 
+- ### Ignore all files in any directory named build
+
+```bash
 build/
+```
 
-# ignore doc/notes.txt, but not doc/server/arch.txt
+<br/>
 
+- ### Ignore doc/notes.txt, but not doc/server/arch.txt
+
+```bash
 doc/\*.txt
+```
 
-# ignore all .pdf files in the doc/ directory and any of its subdirectories
+<br/>
 
+- ### Ignore all .pdf files in the doc/ directory and any of its subdirectories
+
+```bash
 doc/\*_/_.pdf
+```
