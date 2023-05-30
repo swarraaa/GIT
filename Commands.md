@@ -4,10 +4,10 @@
 
 ```bash
 #username
-git config --global user.name "FIRST_NAME LAST_NAME"
+git config --global user.name "first_name last_name"
 
 #email
-git config --global user.email "MY_NAME@example.com"
+git config --global user.email "example@provider.com"
 ```
 
 <hr/><br/>
@@ -25,7 +25,7 @@ git init
 
 ```bash
 #Add single file
-git add <filename>
+git add <file_name>
 
 #Add all the files in the current directory and any sub-directories
 git add .
@@ -92,10 +92,10 @@ git diff --cached
 
 ```bash
 #Stop tracking of file
-git rm <filename>
+git rm <file_name>
 
 #Remove file from the staging area
-git rm --cached <fielname>
+git rm --cached <fiel_name>
 ```
 
 <hr/><br/>
@@ -111,7 +111,7 @@ git mv file_from file_to
 ### 10. Unstaging a staged file:
 
 ```bash
-git reset HEAD <filename>
+git reset HEAD <file_name>
 ```
 
 <hr/><br/>
@@ -120,7 +120,7 @@ git reset HEAD <filename>
 
 ```bash
 #Single file
-git checkout -- <filename>
+git checkout -- <file_name>
 
 #All files
 git checkout -f
@@ -133,8 +133,10 @@ git checkout -f
 ### 1. Adding a remote:
 
 ```bash
-git remote add <shortname> <url>
+git remote add <short_name> <url>
 ```
+
+<hr/><br/>
 
 ### 2. View remote links:
 
@@ -146,36 +148,46 @@ git remote
 git remote -v
 ```
 
+<hr/><br/>
+
 ### 3. Cloning a repository:
 
 ```bash
 #Make a copy of a remote repository and initialize git
-git clone <remotepath>
+git clone <remote_path>
 ```
+
+<hr/><br/>
 
 ### 4. Getting contents of remote repository to local repository:
 
 ```bash
 #Fetch the content from remote repository to local repository
-git fetch <remotename>
+git fetch <remote_name>
 
 #Fetch and merge the content in local repository
-git pull <remotename>
+git pull <remote_name>
 ```
+
+<hr/><br/>
 
 ### 5. Pushing to your remotes:
 
 ```bash
 #Push the changes in local repository to remote repository
-git push <remote> <branch>
+git push <remote_name> <branch_name>
 ```
+
+<hr/><br/>
 
 ### 6. Renaming and Removing remotes:
 
 ```bash
 #Rename a remote
-git remote <oldname> <newname>
+git remote <old_name> <new_name>
 
 #Remove a remote
-git remote remove <remotename>
+git remote remove <remote_name>
 ```
+
+<hr/><br/>
