@@ -3,10 +3,10 @@
 ### 1. Configure Git:
 
 ```bash
-#username
+#configuring the username
 git config --global user.name "first_name last_name"
 
-#email
+#configuring the userEmail
 git config --global user.email "example@provider.com"
 ```
 
@@ -103,7 +103,7 @@ git rm --cached <fiel_name>
 ### 9. Moving files:
 
 ```bash
-git mv file_from file_to
+git mv <source> <destination>
 ```
 
 <hr/><br/>
@@ -133,6 +133,7 @@ git checkout -f
 ### 1. Adding a remote:
 
 ```bash
+#Adds the remote to our machine by naming the remote <short_name>
 git remote add <short_name> <url>
 ```
 
@@ -191,3 +192,60 @@ git remote remove <remote_name>
 ```
 
 <hr/><br/>
+
+# Git Branching Commands:
+
+### 1. Creating a branch:
+
+```bash
+#Creates a branch with given name
+git branch <branch_name>
+```
+
+<hr/><br/>
+
+### 2. Switching to a branch:
+
+```bash
+#Switches to the given branch
+git checkout <branch_name>
+```
+
+<hr/><br/>
+
+### 3. Listing the branches:
+
+```bash
+#List all the branches
+git branch <branch_name>
+```
+
+<hr/><br/>
+
+### 4. Creating and Switching to a branch:
+
+```bash
+#Creates a branch and then Switches to that branches
+git checkout -b <branch_name>
+```
+
+<hr/><br/>
+
+### 5. Renaming a branch:
+
+```bash
+#Renames the branch from <old_name> to <new_name>
+git branch -m <old_name> <new_name>
+```
+
+<hr/><br/>
+
+### 6. Deleting a branch:
+
+```bash
+#Deletes the branch
+git branch -d <branch_name>
+```
+
+<hr/><br/>
+
