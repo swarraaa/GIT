@@ -3,16 +3,17 @@
 ### 1. Configure Git:
 
 ```bash
-#configuring the username
+#Configuring the username
 git config --global user.name "first_name last_name"
 
-#configuring the userEmail
+
+#Configuring the userEmail
 git config --global user.email "example@provider.com"
 ```
 
 <hr/><br/>
 
-### 2. Initailize an empty git repository:
+### 2. Initialize an empty git repository:
 
 ```bash
 #Initialise git
@@ -24,11 +25,13 @@ git init
 ### 3. Staging the file:
 
 ```bash
-#Add single file
+#Add a single file
 git add <file_name>
+
 
 #Add all the files in the current directory and any sub-directories
 git add .
+
 
 #Add all the files in the entire repository
 git add -A
@@ -39,13 +42,15 @@ git add -A
 ### 4. Commit the staged files:
 
 ```bash
-#Create new commit for the staged files
+#Create a new commit for the staged files
 git commit -m "commit message"
+
 
 #Skipping the staging area
 git commit -a -m "commit message"
 
-#Connect to last commit
+
+#Connect to the last commit
 git commit --amend
 ```
 
@@ -56,6 +61,7 @@ git commit --amend
 ```bash
 #Show status
 git status
+
 
 #Show short status
 git status -s
@@ -69,6 +75,7 @@ git status -s
 #List of commits
 git log
 
+
 #-p or -- patch shows the difference introduced in each commit. -2 for 2 log entries
 git log -p -2
 ```
@@ -81,7 +88,8 @@ git log -p -2
 #Compare unstaged changes to staged changes
 git diff
 
-#Compare staged changes to  last commit
+
+#Compare staged changes to the last commit
 git diff --staged
 git diff --cached
 ```
@@ -94,7 +102,8 @@ git diff --cached
 #Stop tracking of file
 git rm <file_name>
 
-#Remove file from the staging area
+
+#Remove the file from the staging area
 git rm --cached <fiel_name>
 ```
 
@@ -103,6 +112,7 @@ git rm --cached <fiel_name>
 ### 9. Moving files:
 
 ```bash
+#Move from source to destination
 git mv <source> <destination>
 ```
 
@@ -111,6 +121,7 @@ git mv <source> <destination>
 ### 10. Unstaging a staged file:
 
 ```bash
+#Remove the file from the staging area
 git reset HEAD <file_name>
 ```
 
@@ -122,73 +133,9 @@ git reset HEAD <file_name>
 #Single file
 git checkout -- <file_name>
 
+
 #All files
 git checkout -f
-```
-
-<hr/><br/>
-
-# Remote Repositories:
-
-### 1. Adding a remote:
-
-```bash
-#Adds the remote to our machine by naming the remote <short_name>
-git remote add <short_name> <url>
-```
-
-<hr/><br/>
-
-### 2. View remote links:
-
-```bash
-#show the remotes
-git remote
-
-#Show the remotes with the links
-git remote -v
-```
-
-<hr/><br/>
-
-### 3. Cloning a repository:
-
-```bash
-#Make a copy of a remote repository and initialize git
-git clone <remote_path>
-```
-
-<hr/><br/>
-
-### 4. Getting contents of remote repository to local repository:
-
-```bash
-#Fetch the content from remote repository to local repository
-git fetch <remote_name>
-
-#Fetch and merge the content in local repository
-git pull <remote_name>
-```
-
-<hr/><br/>
-
-### 5. Pushing to your remotes:
-
-```bash
-#Push the changes in local repository to remote repository
-git push <remote_name> <branch_name>
-```
-
-<hr/><br/>
-
-### 6. Renaming and Removing remotes:
-
-```bash
-#Rename a remote
-git remote <old_name> <new_name>
-
-#Remove a remote
-git remote remove <remote_name>
 ```
 
 <hr/><br/>
@@ -198,7 +145,7 @@ git remote remove <remote_name>
 ### 1. Creating a branch:
 
 ```bash
-#Creates a branch with given name
+#Creates a branch with the given name
 git branch <branch_name>
 ```
 
@@ -225,7 +172,7 @@ git branch <branch_name>
 ### 4. Creating and Switching to a branch:
 
 ```bash
-#Creates a branch and then Switches to that branches
+#Creates a branch and then switches to that branch
 git checkout -b <branch_name>
 ```
 
@@ -249,3 +196,70 @@ git branch -d <branch_name>
 
 <hr/><br/>
 
+# Remote Repositories:
+
+### 1. Adding a remote:
+
+```bash
+#Adds the remote to our machine by naming the remote <short_name>
+git remote add <short_name> <url>
+```
+
+<hr/><br/>
+
+### 2. View remote links:
+
+```bash
+#show the remotes
+git remote
+
+
+#Show the remotes with the links
+git remote -v
+```
+
+<hr/><br/>
+
+### 3. Cloning a repository:
+
+```bash
+#Make a copy of a remote repository and initialize git
+git clone <remote_path>
+```
+
+<hr/><br/>
+
+### 4. Getting contents of the remote repository to the local repository:
+
+```bash
+#Fetch the content from the remote repository to the local repository
+git fetch <remote_name>
+
+
+#Fetch and merge the content in the local repository
+git pull <remote_name>
+```
+
+<hr/><br/>
+
+### 5. Pushing to your remotes:
+
+```bash
+#Push the changes in the local repository to the remote repository
+git push <remote_name> <branch_name>
+```
+
+<hr/><br/>
+
+### 6. Renaming and Removing remotes:
+
+```bash
+#Rename a remote
+git remote <old_name> <new_name>
+
+
+#Remove a remote
+git remote remove <remote_name>
+```
+
+<hr/><br/>
