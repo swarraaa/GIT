@@ -5,7 +5,7 @@
 - Open source DevOps tool
 - A distributed version control system
   <div align="center">
-  <img src="https://res.cloudinary.com/dduur8qoo/image/upload/v1685422156/dvcs_sakx6e.png" alt="distributed version control sysytem" height="300" />
+  <img src="https://res.cloudinary.com/dduur8qoo/image/upload/v1685422156/dvcs_sakx6e.png" alt="distributed version control system" height="300" />
   </div>
   <br/>
 - Git allows you to manage different versions of your project's files, tracking changes made to source code over time
