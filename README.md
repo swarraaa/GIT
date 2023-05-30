@@ -35,7 +35,7 @@
 
 #### Table of contents:
 
-1. <a href="">Introduction to Git</a>
+1. <a href="https://github.com/swarraaa/GIT/blob/main/Introduction.md">Introduction to Git</a>
 2. <a href="https://github.com/swarraaa/GIT/blob/main/Core.md">Git Workflow and Architechture</a>
 3. <a href="https://github.com/swarraaa/GIT/blob/main/Commands.md">Git Commands CheatSheet</a>
 4. <a href="https://github.com/swarraaa/GIT/blob/main/GitIgnore.md">.gitignore File</a>
